@@ -343,7 +343,6 @@ class StepSliderWidget(QtWidgets.QWidget):
 
         value = self._getValueToEmit()
         if value is not None:
-            print(f'mouthReleaseEvent emit: {value}')
             self.valueChanged.emit(value)
 
         self.__previousValue = None
