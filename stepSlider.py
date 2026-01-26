@@ -318,7 +318,6 @@ class StepSliderWidget(QtWidgets.QWidget):
 
         value = self._getValueToEmit()
         if value is not None:
-            print(f'mouseMoveEvent emit: {value}')
             self.valueChanged.emit(value)
 
         super().mouseMoveEvent(event)
@@ -334,7 +333,6 @@ class StepSliderWidget(QtWidgets.QWidget):
 
         value = self._getValueToEmit()
         if value is not None:
-            print(f'mousePressEvent emit: {value}')
             self.valueChanged.emit(value)
 
         super().mousePressEvent(event)
