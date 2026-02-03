@@ -8,7 +8,7 @@ class StepSliderPosition:
     Right = 2
 
 
-class StepSliderWidget(QtWidgets.QWidget):
+class StepSlider(QtWidgets.QWidget):
 
     Left = 0
     Middle = 1

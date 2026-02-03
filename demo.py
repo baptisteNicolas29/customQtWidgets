@@ -1,13 +1,13 @@
 import sys
 from Qt import QtWidgets
-from stepSlider import StepSliderWidget
+from stepSlider import StepSlider
 
 if __name__ == "__main__":
 
     app = QtWidgets.QApplication(sys.argv)
     wdg = QtWidgets.QWidget()
 
-    stepSlider = StepSliderWidget(numberOfStep=1)
+    stepSlider = StepSlider(numberOfStep=1)
     startSlider = QtWidgets.QComboBox()
     startSlider.addItems(['Left', 'Center', 'Right'])
     nbrStep = QtWidgets.QSpinBox()
